@@ -13,7 +13,24 @@
 }
 
 .sec1 > h2 > span {
-  @apply text-indigo-400;
+  color: #fc3735;
+  background: -webkit-linear-gradient(left, #34d399, #38bdf8, #2dd4bf);
+  background-size: 1600px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 3s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 0 1600px;
+  }
+  100% {
+    background-position: 1600px 0;
+  }
 }
 
 .sec1 > p {
@@ -30,9 +47,21 @@
 }
 
 .image {
-  @apply w-80 h-80 mx-auto p-2 border-2 border-indigo-400 rounded-full;
+  @apply w-80 h-80 mx-auto p-1 rounded-full relative;
+}
+
+.image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(to right, #3b82f6, #2dd4bf);
 }
 
 .image > img {
-  @apply rounded-full w-full h-full object-cover;
+  @apply rounded-full w-full h-full object-cover bg-black;
 }

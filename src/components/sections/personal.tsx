@@ -17,8 +17,7 @@ export function Personal() {
           products using scrum / agile methodologies.
         </p>
         <div className={styles.buttons}>
-          <Button color="primary" text="Resume" />
-          <Button color="default" text="Contact Me" />
+          <Button color="success" text="Contact Me" />
         </div>
       </div>
       <div className={styles.sec2}>
