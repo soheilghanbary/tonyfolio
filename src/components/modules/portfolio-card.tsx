@@ -17,14 +17,14 @@ export default function PortfolioCard({
     <div className={styles.card}>
       <img draggable="false" src={image} />
       <div className={styles.section}>
+        <h2>{title}</h2>
+        <p>{description}</p>
         <div className={styles.tags}>
           {tags.map((tag) => (
             <span key={tag}>{tag}</span>
           ))}
         </div>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <div>
+        <div className="flex justify-end">
           <Button color="default" text="See Details" />
         </div>
       </div>

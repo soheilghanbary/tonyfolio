@@ -50,7 +50,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="ex: tony"
-              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-8 border border-gray-700 bg-transparent rounded-lg"
+              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-6 border border-gray-700 bg-transparent rounded-lg"
             />
           </div>
           <div className="flex flex-col text-sm gap-2">
@@ -58,7 +58,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="ex: ghanbary"
-              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-8 border border-gray-700 bg-transparent rounded-lg"
+              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-6 border border-gray-700 bg-transparent rounded-lg"
             />
           </div>
           <div className="col-span-2 flex flex-col text-sm gap-2">
@@ -66,7 +66,7 @@ export default function Contact() {
             <textarea
               rows={6}
               placeholder="ex: hello"
-              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-8 border border-gray-700 bg-transparent rounded-lg"
+              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-6 border border-gray-700 bg-transparent rounded-lg"
             />
           </div>
         </div>
