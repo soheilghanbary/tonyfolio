@@ -29,7 +29,7 @@ function Menu() {
 }
 
 function Settings() {
-  return <Button color="primary" text="Settings" icon={<CogsIcon />} />;
+  return <Button color="warning" text="Settings" icon={<CogsIcon />} />;
 }
 
 const CogsIcon = () => (
