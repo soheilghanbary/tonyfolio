@@ -37,6 +37,11 @@ const skills: SkillProps[] = [
     level: "advanced",
   },
   {
+    icon: JsIcon,
+    title: "JavaScript ES2023",
+    level: "advanced",
+  },
+  {
     icon: TailwindIcon,
     title: "Tailwind",
     level: "advanced",
@@ -47,8 +52,8 @@ const skills: SkillProps[] = [
     level: "advanced",
   },
   {
-    icon: JsIcon,
-    title: "JavaScript ES2023",
+    icon: SassIcon,
+    title: "Sass",
     level: "advanced",
   },
   {
@@ -57,23 +62,8 @@ const skills: SkillProps[] = [
     level: "medium",
   },
   {
-    icon: SassIcon,
-    title: "Sass",
-    level: "advanced",
-  },
-  {
     icon: NodeIcon,
     title: "Node.JS",
-    level: "medium",
-  },
-  {
-    icon: VueIcon,
-    title: "Vue.JS",
-    level: "medium",
-  },
-  {
-    icon: NuxtIcon,
-    title: "Nuxt",
     level: "medium",
   },
   {
@@ -84,11 +74,6 @@ const skills: SkillProps[] = [
   {
     icon: TRPCIcon,
     title: "tRPC",
-    level: "advanced",
-  },
-  {
-    icon: WordpressIcon,
-    title: "WordPress",
     level: "advanced",
   },
   {
@@ -105,6 +90,21 @@ const skills: SkillProps[] = [
     icon: LaravelIcon,
     title: "Laravel",
     level: "advanced",
+  },
+  {
+    icon: WordpressIcon,
+    title: "WordPress",
+    level: "advanced",
+  },
+  {
+    icon: VueIcon,
+    title: "Vue.JS",
+    level: "medium",
+  },
+  {
+    icon: NuxtIcon,
+    title: "Nuxt",
+    level: "medium",
   },
   {
     icon: PythonIcon,

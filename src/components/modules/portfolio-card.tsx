@@ -15,7 +15,7 @@ export default function PortfolioCard({
 }: PortfolioProps) {
   return (
     <div className={styles.card}>
-      <img src={image} />
+      <img draggable="false" src={image} />
       <div className={styles.section}>
         <div className={styles.tags}>
           {tags.map((tag) => (

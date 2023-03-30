@@ -23,7 +23,7 @@ export function Personal() {
       </div>
       <div className={styles.sec2}>
         <div className={styles.image}>
-          <img src="https://avatars.githubusercontent.com/u/98669021?v=4" />
+          <img draggable="false" src="/images/tony.png" className="sepia" />
         </div>
       </div>
     </div>
