@@ -1,5 +1,5 @@
 .container {
-  @apply border-b border-gray-700 py-6 px-2 sticky top-0 backdrop-blur-lg;
+  @apply border-b border-gray-700 py-6 px-2 sticky top-0 backdrop-blur-lg z-30;
 }
 
 .navbar {
