@@ -1,0 +1,30 @@
+{
+  "user": {
+    "education": "Computer Diploma",
+    "mobile": "+98 919 997 3120",
+    "location": "Tehran, TehranSar, IRAN",
+    "birthday": "2002/2/02",
+    "email": "soli.ghanbary@gmail.com",
+    "military_service": "Exempted"
+  },
+  "projects": [
+    {
+      "title": "MyRepeater.ir (FrontEnd Developer)",
+      "image": "https://cdn.dribbble.com/userupload/3491358/file/original-2c34eb4548cfc04a460b03d2e208603d.png?compress=1&resize=1600x1200",
+      "description": "A website for Jakarta Football School. One of the most prestigious football schools for the youth generation. This website is built to publicize Jakarta Football School and simplify student registration processes.",
+      "tags": ["react.js", "tailwindcss", "laravel"]
+    },
+    {
+      "title": "KianStore.ir (Full Stack Developer)",
+      "image": "https://cdn.dribbble.com/userupload/5486068/file/original-1983fa9647ba8aa41c45599b6c7f7bfe.png?compress=1&resize=1600x1207",
+      "description": "Design Exploration for NFTS Market, Platform where users can sell and buy digital artwork of Abstract NFT Art themed avatar sets. Currently only available in the OpenSea market and this Avatar has a unique feature that is rarely encountered. They can get market statistics updates. Designed to it easier for you to get NFTs from the NFT artists you like easily and quickly.",
+      "tags": ["vue.js", "typescript", "express.js"]
+    },
+    {
+      "title": "CreativeArt.co (FrontEnd Developer)",
+      "image": "https://cdn.dribbble.com/userupload/4769433/file/original-78ad16e4356955113467b5eda349007f.jpg?compress=1&resize=2400x1800",
+      "description": "Hope you're doing well. This is Creative Art - NFT Marketplace Landing concept. You can download the file and Let me know what you think about the design and don't forget to press the 'L' button 😎",
+      "tags": ["Next.js", "tRPC & Prisma", "TypeScript"]
+    }
+  ]
+}

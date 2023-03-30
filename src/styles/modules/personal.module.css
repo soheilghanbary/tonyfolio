@@ -1,0 +1,38 @@
+.container {
+  @apply flex my-32 items-center gap-10;
+  @apply xl:flex-row lg:flex-row xl:my-32 lg:my-32 my-12 flex-col-reverse;
+}
+
+.sec1 {
+  @apply w-1/2 flex flex-col gap-6;
+  @apply xl:w-1/2 lg:w-1/2 w-full xl:text-left lg:text-left xl:items-start lg:items-start text-center items-center;
+}
+
+.sec1 > h2 {
+  @apply font-semibold text-4xl text-white leading-tight;
+}
+
+.sec1 > h2 > span {
+  @apply text-indigo-400;
+}
+
+.sec1 > p {
+  @apply text-sm leading-6;
+}
+
+.buttons {
+  @apply flex items-center gap-4;
+}
+
+.sec2 {
+  @apply w-1/2 flex justify-end;
+  @apply xl:w-1/2 lg:w-1/2 w-full;
+}
+
+.image {
+  @apply w-80 h-80 mx-auto p-2 border-2 border-indigo-400 rounded-full;
+}
+
+.image > img {
+  @apply rounded-full w-full h-full object-cover;
+}

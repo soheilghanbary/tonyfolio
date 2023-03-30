@@ -1,0 +1,39 @@
+.container {
+  @apply flex items-center max-w-screen-lg mx-auto py-20;
+  @apply xl:flex-row lg:flex-row flex-col;
+}
+
+.personal {
+  @apply w-1/2;
+  @apply xl:w-1/2 lg:w-1/2 w-full;
+}
+
+.personal > h2 {
+  @apply text-white font-semibold text-2xl mb-10;
+}
+
+.items {
+  @apply flex flex-col gap-4;
+  list-style: url("../../assets/icons/bolt-2.svg");
+}
+
+.items > li {
+  @apply flex items-center gap-3;
+}
+
+.items > li {
+  @apply flex items-center gap-2;
+}
+
+.items > li > span:nth-child(1) {
+  @apply text-white;
+}
+
+.items > li > span:nth-child(2) {
+  @apply text-gray-400;
+}
+
+.sec2 {
+  @apply w-1/2;
+  @apply xl:w-1/2 lg:w-1/2 w-full;
+}

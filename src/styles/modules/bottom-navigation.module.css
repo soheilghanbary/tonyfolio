@@ -1,0 +1,15 @@
+.container {
+    @apply sticky bottom-0 border-t border-gray-700 bg-gray-950 w-full grid grid-cols-5;
+}
+
+.container > li > a {
+    @apply flex flex-col pt-3 pb-2 items-center gap-2;
+}
+
+.container > li > a > span {
+    @apply text-xs;
+}
+
+.container > li > a > svg {
+    @apply w-5 h-5;
+}

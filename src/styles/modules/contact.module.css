@@ -1,0 +1,24 @@
+.container {
+  @apply grid gap-10 my-10 max-w-screen-lg mx-auto;
+  @apply xl:grid-cols-2 lg:grid-cols-2;
+}
+
+.contact-info > h2 {
+  @apply text-white font-semibold text-4xl mb-6;
+}
+
+.icons {
+  @apply flex items-center gap-4;
+}
+
+.contact-info > h6 {
+    @apply text-white mb-4;
+}
+
+.icons > li {
+  @apply flex justify-center items-center p-2 rounded-full border border-gray-700;
+}
+
+.icons > li > a > svg {
+  @apply w-6 h-6 text-white;
+}

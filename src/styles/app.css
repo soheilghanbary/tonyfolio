@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  font-family: "Inter", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth
+}
+
+body {
+  @apply bg-gray-950 text-gray-400;
+}
+
+#skills , #portfolio , #contact {
+  @apply scroll-m-28;
+}
+
+#about {
+  @apply scroll-m-10;
+}

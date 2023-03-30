@@ -1,0 +1,19 @@
+.btn {
+  @apply flex items-center border justify-center px-6 active:scale-90 duration-150 py-2 leading-6 gap-2 rounded-full font-medium;
+}
+
+.primary {
+  @apply bg-indigo-300 text-indigo-950 border-indigo-300;
+}
+
+.warning {
+  @apply bg-orange-300 text-orange-950 border-orange-300;
+}
+
+.success {
+  @apply bg-teal-300 text-teal-950 border-teal-300;
+}
+
+.default {
+  @apply bg-transparent border-gray-700 hover:bg-white hover:text-gray-950;
+}

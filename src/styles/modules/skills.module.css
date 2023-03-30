@@ -1,0 +1,15 @@
+.container > h2 {
+    @apply text-white font-semibold text-2xl mb-6;
+}
+
+.items {
+    @apply flex items-center flex-wrap gap-8;
+}
+
+.items > li {
+    @apply flex items-center gap-3 text-lg;
+}
+
+.items > li > svg {
+    @apply w-6 h-6;
+}
