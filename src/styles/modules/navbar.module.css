@@ -15,5 +15,5 @@
 }
 
 .menu > li > a {
-  @apply px-4 py-2 cursor-pointer duration-200 hover:text-rose-400;
+  @apply px-4 py-2 cursor-pointer duration-200 hover:text-white;
 }
