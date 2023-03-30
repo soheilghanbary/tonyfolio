@@ -48,7 +48,7 @@ const skills: SkillProps[] = [
   },
   {
     icon: JsIcon,
-    title: "JavaScript ES7",
+    title: "JavaScript ES2023",
     level: "advanced",
   },
   {
@@ -88,7 +88,7 @@ const skills: SkillProps[] = [
   },
   {
     icon: WordpressIcon,
-    title: "React",
+    title: "WordPress",
     level: "advanced",
   },
   {
