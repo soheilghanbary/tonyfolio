@@ -1,5 +1,5 @@
 .container > h2 {
-    @apply text-white font-semibold text-2xl mb-6;
+    @apply text-white font-semibold text-2xl mb-10;
 }
 
 .items {

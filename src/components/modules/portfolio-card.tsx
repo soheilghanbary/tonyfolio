@@ -24,7 +24,7 @@ export default function PortfolioCard({
             <span key={tag}>{tag}</span>
           ))}
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-center xl:justify-start lg:justify-start">
           <Button color="default" text="See Details" />
         </div>
       </div>
