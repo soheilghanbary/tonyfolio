@@ -1,5 +1,5 @@
 .container > div > h2 {
-    @apply text-3xl text-white font-semibold mb-6;
+    @apply text-3xl text-heading font-semibold mb-6;
 }
 
 .info {
@@ -33,5 +33,5 @@
 }
 
 .section > h2 {
-    @apply text-2xl text-white font-semibold;
+    @apply text-2xl text-heading font-semibold;
 }

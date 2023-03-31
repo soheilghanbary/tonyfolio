@@ -122,8 +122,8 @@ export default function Skills() {
           <li>
             <item.icon />
             <div className="flex items-center gap-2">
-              <span className="text-white">{item.title}</span>
-              <span className="text-sm text-gray-400">{item.level}</span>
+              <span className="text-heading">{item.title}</span>
+              <span className="text-sm text-body">{item.level}</span>
             </div>
           </li>
         ))}

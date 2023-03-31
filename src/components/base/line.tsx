@@ -1,3 +1,3 @@
 export default function Line() {
-  return <hr className="border-gray-700 my-8" />;
+  return <hr className="border-line my-8" />;
 }

@@ -4,6 +4,7 @@ import GitIcon from "~/assets/icons/social/github.svg";
 import InstagramIcon from "~/assets/icons/social/instagram.svg";
 import LinkedInIcon from "~/assets/icons/social/linkedin.svg";
 import TwitterIcon from "~/assets/icons/social/twitter.svg";
+import { Button } from "../base/buttons";
 export default function Contact() {
   return (
     <div id="contact" className={styles.container}>
@@ -46,33 +47,31 @@ export default function Contact() {
       <div className={styles["contact-form"]}>
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div className="flex flex-col text-sm gap-2">
-            <label className="text-white">First Name</label>
+            <label className="text-heading">First Name</label>
             <input
               type="text"
               placeholder="ex: tony"
-              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-6 border border-gray-700 bg-transparent rounded-lg"
+              className="px-4 text-heading focus:ring-2 ring-indigo-400 duration-200 py-3 leading-6 border border-line bg-transparent rounded-xl"
             />
           </div>
           <div className="flex flex-col text-sm gap-2">
-            <label className="text-white">Last Name</label>
+            <label className="text-heading">Last Name</label>
             <input
               type="text"
               placeholder="ex: ghanbary"
-              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-6 border border-gray-700 bg-transparent rounded-lg"
+              className="px-4 text-heading focus:ring-2 ring-indigo-400 duration-200 py-3 leading-6 border border-line bg-transparent rounded-xl"
             />
           </div>
           <div className="col-span-2 flex flex-col text-sm gap-2">
-            <label className="text-white">Message</label>
+            <label className="text-heading">Message</label>
             <textarea
               rows={6}
               placeholder="ex: hello"
-              className="px-4 text-gray-100 focus:ring-1 ring-indigo-400 duration-200 py-3 leading-6 border border-gray-700 bg-transparent rounded-lg"
+              className="px-4 text-heading focus:ring-2 ring-indigo-400 duration-200 py-3 leading-6 border border-line bg-transparent rounded-xl"
             />
           </div>
         </div>
-        <button className="flex items-center justify-center px-8 active:scale-90 duration-150 py-2 bg-teal-500 border border-teal-400 text-white rounded-full font-semibold">
-            Send Message
-          </button>
+        <Button text="Send Message" color="success" />
       </div>
     </div>
   );

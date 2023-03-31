@@ -9,7 +9,7 @@
 }
 
 .personal > h2 {
-  @apply text-white font-semibold text-2xl mb-10;
+  @apply text-heading font-semibold text-2xl mb-10;
 }
 
 .items {
@@ -26,11 +26,11 @@
 }
 
 .items > li > span:nth-child(1) {
-  @apply text-white;
+  @apply text-heading;
 }
 
 .items > li > span:nth-child(2) {
-  @apply text-gray-400;
+  @apply text-body;
 }
 
 .sec2 {

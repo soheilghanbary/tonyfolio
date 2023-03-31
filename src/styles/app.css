@@ -14,8 +14,28 @@
   scroll-behavior: smooth
 }
 
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+
+  --text-body: #4b5563;
+  --text-heading: #485A83;
+
+  --line-color: #e5e7eb;
+}
+
+.dark {
+  --bg-primary: #030712;
+  --bg-secondary: #1f2937;
+
+  --text-body: #9ca3af;
+  --text-heading: #ffffff;
+
+  --line-color: #374151;
+}
+
 body {
-  @apply bg-gray-950 text-gray-400;
+  @apply bg-primary text-body;
 }
 
 #skills , #portfolio , #contact {

@@ -9,7 +9,7 @@
 }
 
 .sec1 > h2 {
-  @apply font-semibold text-4xl text-white leading-tight;
+  @apply font-semibold text-4xl text-heading leading-tight;
 }
 
 .sec1 > h2 > span {

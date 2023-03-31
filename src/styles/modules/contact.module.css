@@ -4,7 +4,7 @@
 }
 
 .contact-info > h2 {
-  @apply text-white font-semibold text-4xl mb-6;
+  @apply text-heading font-semibold text-4xl mb-6;
 }
 
 .icons {
@@ -12,13 +12,13 @@
 }
 
 .contact-info > h6 {
-    @apply text-white mb-4;
+    @apply text-heading mb-4;
 }
 
 .icons > li {
-  @apply flex justify-center items-center p-2 rounded-full border border-gray-700;
+  @apply flex justify-center items-center p-2 rounded-full border border-line;
 }
 
 .icons > li > a > svg {
-  @apply w-6 h-6 text-white;
+  @apply w-6 h-6 text-heading;
 }

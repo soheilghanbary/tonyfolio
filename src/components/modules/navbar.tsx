@@ -1,5 +1,6 @@
 import styles from "~/styles/modules/navbar.module.css";
 import { Button } from "../base/buttons";
+import { useTheme } from "next-themes";
 export default function Navbar() {
   return (
     <header className={styles.container}>
@@ -19,17 +20,30 @@ function Logo() {
 function Menu() {
   return (
     <ul className={styles.menu}>
-      <li><a href="#">Personal</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="#">Personal</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
   );
 }
 
 function Settings() {
-  return <Button color="warning" text="Settings" icon={<CogsIcon />} />;
+  const { theme, setTheme } = useTheme();
+  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
+
+  return <Button onClick={toggleTheme} color="warning" text="Settings" icon={<CogsIcon />} />;
 }
 
 const CogsIcon = () => (
