@@ -15,5 +15,5 @@
 }
 
 .default {
-  @apply bg-transparent border-line hover:bg-white hover:text-heading;
+  @apply bg-transparent border-line hover:bg-white hover:text-black;
 }
