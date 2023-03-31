@@ -11,40 +11,30 @@ interface BottomNavigationItemProps {
   icon: JSX.Element | any;
 }
 
-const items: BottomNavigationItemProps[] = [
-  {
-    label: "Personal",
-    icon: UserIcon,
-    href: "#",
-  },
-  {
-    label: "Skills",
-    icon: BoltIcon,
-    href: "#skills",
-  },
-  {
-    label: "Portfolio",
-    icon: ImagesIcon,
-    href: "#portfolio",
-  },
-  {
-    label: "About",
-    icon: UserSquareIcon,
-    href: "#about",
-  },
-  {
-    label: "Contact",
-    icon: PhoneIcon,
-    href: "#contact",
-  },
-];
-
-export default function BottomNavigation() {
+export default function BottomNavigation({ navItems }: any) {
   return (
     <ul className={styles.container}>
-      {items.map((b) => (
-        <BottomNavigationItem key={b.label} {...b} />
-      ))}
+      <BottomNavigationItem icon={UserIcon} href="#" label={navItems.l1} />
+      <BottomNavigationItem
+        icon={BoltIcon}
+        href="#skills"
+        label={navItems.l2}
+      />
+      <BottomNavigationItem
+        icon={ImagesIcon}
+        href="#portfolio"
+        label={navItems.l3}
+      />
+      <BottomNavigationItem
+        icon={UserSquareIcon}
+        href="#about"
+        label={navItems.l4}
+      />
+      <BottomNavigationItem
+        icon={PhoneIcon}
+        href="#contact"
+        label={navItems.l5}
+      />
     </ul>
   );
 }
