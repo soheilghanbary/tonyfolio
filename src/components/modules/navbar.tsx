@@ -1,6 +1,7 @@
 import styles from "~/styles/modules/navbar.module.css";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface NavbarProps {
   lang: string;
@@ -58,12 +59,12 @@ function Settings({ lang }: { lang: string }) {
       >
         <MoonIcon />
       </button>
-      <button
-        onClick={(_) => router.push(lang === "en" ? "/fa" : "/en")}
+      <Link
         className="py-2 px-4 rtl:rounded-l-full ltr:rounded-r-full bg-teal-500 text-white"
+        href={lang === "en" ? "/fa" : "/en"}
       >
         <LangIcon />
-      </button>
+      </Link>
     </div>
   );
 }
