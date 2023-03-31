@@ -1,18 +1,17 @@
-"use client"
 import { ReactNode } from "react";
-import Navbar from "../modules/navbar";
-import BottomNavigation from "../modules/bottom-navigation";
-import { ThemeProvider } from "next-themes";
+import { getDictionary } from "locales/getLocale";
+import LayoutContent from "./layout-content";
 
 interface LayoutProps {
+  lang: string;
   children: ReactNode;
 }
-export default function Layout({ children }: LayoutProps) {
+
+export default async function Layout({ children, lang }: LayoutProps) {
+  const d = await getDictionary(lang === "en" ? "en" : "fa");
   return (
-    <ThemeProvider attribute="class">
-      <Navbar />
-      <section className="max-w-screen-xl mx-auto p-4">{children}</section>
-      <BottomNavigation />
-    </ThemeProvider>
+    <LayoutContent lang={lang} navItems={d.navbar}>
+      {children}
+    </LayoutContent>
   );
 }

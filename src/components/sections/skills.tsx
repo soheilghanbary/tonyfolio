@@ -19,6 +19,10 @@ import {
 } from "~/assets/icons";
 import styles from "~/styles/modules/skills.module.css";
 
+interface SkillsProps {
+  title: string;
+}
+
 interface SkillProps {
   icon: any;
   title: string;
@@ -113,10 +117,10 @@ const skills: SkillProps[] = [
   },
 ];
 
-export default function Skills() {
+export default function Skills({ title }: SkillsProps) {
   return (
     <div id="skills" className={`${styles.container}`}>
-      <h2>Skills</h2>
+      <h2>{title}</h2>
       <ul className={styles.items}>
         {skills.map((item) => (
           <li>

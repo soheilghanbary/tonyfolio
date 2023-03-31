@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "l1": "Personal",
+    "l2": "Skills",
+    "l3": "Portfolio",
+    "l4": "About",
+    "l5": "Contact"
+  },
+  "personal": {
+    "title": "Soheil Ghanbary",
+    "sub-title": "Full Stack Web Developer",
+    "description": "Product Manager / Full-Stack Web Developer with five years of extensive experience in web development, UI design, and product management specializing in building exceptional digital experiences for your business needs. And proven understanding of building scalable products using scrum / agile methodologies.",
+    "btn": "Contact Me"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "portfolio": {
+    "title": "I like to create something powerful, simple, and clean.",
+    "description": "Over the years, I have had the honor to collaborate with clients ranging from startups to SMEs. Below are some of the works I've been involved with."
+  },
+  "about": {
+    "title": "My Information",
+    "edut": "Education",
+    "birth": "BirthDay",
+    "location": "Location",
+    "email": "Email",
+    "mobile": "Mobile",
+    "military-service": "Exempted"
+  },
+  "contact": {
+    "title": "Let’s work together on your next project.",
+    "description": "I'm always happy to hear about exciting opportunities, join in interesting conversations, and build valuable connections. Let's connect!",
+    "h6": "follow me on social media"
+  }
+}

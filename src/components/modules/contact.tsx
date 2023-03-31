@@ -5,17 +5,20 @@ import InstagramIcon from "~/assets/icons/social/instagram.svg";
 import LinkedInIcon from "~/assets/icons/social/linkedin.svg";
 import TwitterIcon from "~/assets/icons/social/twitter.svg";
 import { Button } from "../base/buttons";
-export default function Contact() {
+
+interface ContactProps {
+  title: string;
+  description: string;
+  h6: string;
+}
+
+export default function Contact({ title, description, h6 }: ContactProps) {
   return (
     <div id="contact" className={styles.container}>
       <div className={styles["contact-info"]}>
-        <h2>Let’s work together on your next project.</h2>
-        <p>
-          I'm always happy to hear about exciting opportunities, join in
-          interesting conversations, and build valuable connections. Let's
-          connect!
-        </p>
-        <h6 className="mt-6 text-sm">follow me on social media</h6>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <h6 className="mt-6 text-sm">{h6}</h6>
         <ul className={styles.icons}>
           <li>
             <a href="https://facebook.com/solighanbary">

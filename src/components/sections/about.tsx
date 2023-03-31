@@ -1,25 +1,36 @@
 import styles from "~/styles/modules/about.module.css";
 import { user } from "~/utils/common.json";
+import KentImage from '~/assets/images/kent-red-2.webp'
 
-export default function About() {
+interface AboutProps {
+  title: string;
+  edu: string;
+  birth: string;
+  email: string;
+  military_service: string;
+  location: string;
+  mobile: string;
+}
+
+export default function About({ title , edu , email , military_service , birth , location , mobile }: AboutProps) {
   return (
     <div id="about" className={styles.container}>
       <div className={styles.personal}>
-        <h2>Personal Info</h2>
+        <h2>{title}</h2>
         <ul className={styles.items}>
-          <PersonalInfoItem label="Education" value={user.education} />
-          <PersonalInfoItem label="Birthday" value={user.birthday} />
+          <PersonalInfoItem label={edu} value={user.education} />
+          <PersonalInfoItem label={email} value={user.birthday} />
           <PersonalInfoItem
-            label="Military Service"
+            label={military_service}
             value={user.military_service}
           />
-          <PersonalInfoItem label="Location" value={user.location} />
-          <PersonalInfoItem label="Email" value={user.email} />
-          <PersonalInfoItem label="Mobile" value={user.mobile} />
+          <PersonalInfoItem label={location} value={user.location} />
+          <PersonalInfoItem label={email} value={user.email} />
+          <PersonalInfoItem label={email} value={user.mobile} />
         </ul>
       </div>
       <div className={styles.sec2}>
-        <img className="w-[440px] ml-auto" src="/images/kent-red-2.webp" />
+        <img className="w-[440px] ml-auto" src={KentImage.src} />
       </div>
     </div>
   );

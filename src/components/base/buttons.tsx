@@ -7,6 +7,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: ReactNode;
 }
 
+interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  color: "primary" | "danger " | "warning" | "success" | "default";
+  icon?: ReactNode;
+}
+
 export const Button = ({ text, icon, color, ...rest }: ButtonProps) => {
   return (
     <button className={`${styles.btn} ${styles[color]}`} {...rest}>
@@ -15,3 +20,11 @@ export const Button = ({ text, icon, color, ...rest }: ButtonProps) => {
     </button>
   );
 };
+
+export function IconButton({ icon, color, ...rest }: IconButtonProps) {
+  return (
+    <button className={`${styles.btn} ${styles[color]}`} {...rest}>
+      {icon}
+    </button>
+  );
+}

@@ -9,9 +9,11 @@
   outline: none;
   text-decoration: none;
   user-select: none;
+  /* font-family: "Inter", sans-serif; */
   font-family: "Inter", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   -webkit-tap-highlight-color: transparent;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -19,7 +21,7 @@
   --bg-secondary: #f9fafb;
 
   --text-body: #4b5563;
-  --text-heading: #485A83;
+  --text-heading: #485a83;
 
   --line-color: #e5e7eb;
 }
@@ -36,9 +38,16 @@
 
 body {
   @apply bg-primary text-body;
+  transition: background 200ms;
 }
 
-#skills , #portfolio , #contact {
+html[lang="fa"] {
+  text-align: right;
+}
+
+#skills,
+#portfolio,
+#contact {
   @apply scroll-m-28;
 }
 

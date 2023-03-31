@@ -4,7 +4,7 @@
 }
 
 .contact-info > h2 {
-  @apply text-heading font-semibold text-4xl mb-6;
+  @apply text-heading font-semibold text-4xl mb-6 leading-normal;
 }
 
 .icons {
