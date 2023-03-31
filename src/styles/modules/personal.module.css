@@ -64,5 +64,5 @@
 }
 
 .image > img {
-  @apply rounded-full w-full h-full object-cover bg-black;
+  @apply rounded-full w-full h-full object-cover bg-primary;
 }
