@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import { Button } from "~/components/base/buttons";
 import styles from "~/styles/modules/personal.module.css";
+import useIntersectionObserver from "~/lib/hooks/useIntersectionObserver";
 
 interface PersonalProps {
   title: string;
@@ -17,15 +18,17 @@ export default function PersonalInfo({
   description,
   btnText,
 }: PersonalProps) {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  const triggerRef = useRef<any>(null);
+  const dataRef = useIntersectionObserver(triggerRef, {
+    freezeOnceVisible: false,
+  });
 
   const titleProps = useSpring({
-    from: { y: isLoaded ? 50 : 0 },
-    opacity: isLoaded ? 1 : 0,
+    from: { y: 50, opacity: 0 },
+    to: {
+      y: dataRef?.isIntersecting ? 0 : 50,
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+    },
     delay: 500,
     config: {
       duration: 600,
@@ -33,8 +36,11 @@ export default function PersonalInfo({
   });
 
   const subtitleProps = useSpring({
-    from: { y: isLoaded ? 50 : 0 },
-    opacity: isLoaded ? 1 : 0,
+    from: { y: 50, opacity: 0 },
+    to: {
+      y: dataRef?.isIntersecting ? 0 : 50,
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+    },
     delay: 800,
     config: {
       duration: 600,
@@ -42,7 +48,7 @@ export default function PersonalInfo({
   });
 
   return (
-    <>
+    <div ref={triggerRef}>
       <animated.h2 style={titleProps}>
         {title}
         <br />
@@ -52,6 +58,6 @@ export default function PersonalInfo({
       <animated.div style={subtitleProps} className={styles.buttons}>
         <Button color="success" text={btnText} />
       </animated.div>
-    </>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import { animated, useSpring } from "@react-spring/web";
+import { useRef } from "react";
 import {
   CssIcon,
   NestIcon,
@@ -19,6 +20,7 @@ import {
   JsIcon,
   TailwindIcon,
 } from "~/assets/icons";
+import useIntersectionObserver from "~/lib/hooks/useIntersectionObserver";
 import styles from "~/styles/modules/skills.module.css";
 
 interface SkillsProps {
@@ -120,23 +122,32 @@ const skills: SkillProps[] = [
 ];
 
 export default function Skills({ title }: SkillsProps) {
-  const titleProps = useSpring({
+  const triggerRef = useRef<any>(null);
+  const dataRef = useIntersectionObserver(triggerRef, {
+    freezeOnceVisible: false,
+  });
+  const itemProps = useSpring({
     from: { y: 50, opacity: 0 },
-    to: { y: 0, opacity: 1 },
-    delay: 500,
+    to: {
+      y: dataRef?.isIntersecting ? 0 : 50,
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+    },
+    delay: 300,
     config: {
       duration: 600,
     },
   });
 
   return (
-    <div id="skills" className={`${styles.container}`}>
-      <animated.h2 style={titleProps}>{title}</animated.h2>
+    <div id="skills" className={`${styles.container}`} ref={triggerRef}>
+      <animated.h2 style={itemProps}>{title}</animated.h2>
       <ul className={styles.items}>
         {skills.map((item, i) => {
           const itemProps = useSpring({
             from: { opacity: 0 },
-            to: { opacity: 1 },
+            to: {
+              opacity: dataRef?.isIntersecting ? 1 : 0,
+            },
             delay: i * 100,
             config: {
               duration: 1000,
