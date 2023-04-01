@@ -3,7 +3,7 @@ import About from "~/components/sections/about";
 import Contact from "~/components/modules/contact";
 import Portfolio from "~/components/sections/portfolio";
 import Skills from "~/components/sections/skills";
-import { Personal } from "~/components/sections/personal";
+import Personal from "~/components/Personal";
 import { getDictionary } from "locales/getLocale";
 import { Locale } from "i18n-config";
 

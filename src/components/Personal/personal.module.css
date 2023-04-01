@@ -1,0 +1,68 @@
+.container {
+  @apply flex my-32 items-center gap-8 max-w-screen-lg mx-auto;
+  @apply xl:flex-row lg:flex-row xl:my-32 lg:my-32 my-12 flex-col-reverse;
+}
+
+.sec1 {
+  @apply w-1/2 flex flex-col gap-6;
+  @apply xl:w-1/2 lg:w-1/2 w-full xl:text-left lg:text-left xl:items-start lg:items-start text-center items-center;
+  @apply rtl:text-right;
+}
+
+.sec1 > h2 {
+  @apply font-semibold text-4xl text-heading leading-tight;
+}
+
+.sec1 > h2 > span {
+  color: #fc3735;
+  background: -webkit-linear-gradient(left, #34d399, #38bdf8, #2dd4bf);
+  background-size: 1600px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 3s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 0 1600px;
+  }
+  100% {
+    background-position: 1600px 0;
+  }
+}
+
+.sec1 > p {
+  @apply text-sm leading-6;
+}
+
+.buttons {
+  @apply flex items-center gap-4;
+}
+
+.sec2 {
+  @apply w-1/2 flex justify-end;
+  @apply xl:w-1/2 lg:w-1/2 w-full;
+}
+
+.image {
+  @apply w-80 h-80 mx-auto p-1 rounded-full relative;
+}
+
+.image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(to right, #3b82f6, #2dd4bf);
+}
+
+.image > img {
+  @apply rounded-full w-full h-full object-cover bg-gray-800;
+}

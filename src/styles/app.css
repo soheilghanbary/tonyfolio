@@ -41,6 +41,10 @@ body {
   transition: background 200ms;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html[lang="fa"] {
   text-align: right;
 }

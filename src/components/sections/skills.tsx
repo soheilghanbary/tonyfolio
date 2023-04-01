@@ -1,3 +1,5 @@
+"use client";
+import { animated, useSpring } from "@react-spring/web";
 import {
   CssIcon,
   NestIcon,
@@ -118,19 +120,38 @@ const skills: SkillProps[] = [
 ];
 
 export default function Skills({ title }: SkillsProps) {
+  const titleProps = useSpring({
+    from: { y: 50, opacity: 0 },
+    to: { y: 0, opacity: 1 },
+    delay: 500,
+    config: {
+      duration: 600,
+    },
+  });
+
   return (
     <div id="skills" className={`${styles.container}`}>
-      <h2>{title}</h2>
+      <animated.h2 style={titleProps}>{title}</animated.h2>
       <ul className={styles.items}>
-        {skills.map((item) => (
-          <li>
-            <item.icon />
-            <div className="flex items-center gap-2">
-              <span className="text-heading">{item.title}</span>
-              <span className="text-sm text-body">{item.level}</span>
-            </div>
-          </li>
-        ))}
+        {skills.map((item, i) => {
+          const itemProps = useSpring({
+            from: { opacity: 0 },
+            to: { opacity: 1 },
+            delay: i * 100,
+            config: {
+              duration: 1000,
+            },
+          });
+          return (
+            <animated.li key={item.title} style={itemProps}>
+              <item.icon />
+              <div className="flex items-center gap-2">
+                <span className="text-heading">{item.title}</span>
+                <span className="text-sm text-body">{item.level}</span>
+              </div>
+            </animated.li>
+          );
+        })}
       </ul>
     </div>
   );
