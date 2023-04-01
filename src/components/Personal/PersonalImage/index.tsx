@@ -12,7 +12,7 @@ export default function PersonalImage() {
   }, []);
 
   const fadeProps = useSpring({
-    from: { scale: isLoaded ? 2 : 1 },
+    from: { scale: isLoaded ? 1.5 : 1 },
     opacity: isLoaded ? 1 : 0,
     delay: 300,
     config: {
