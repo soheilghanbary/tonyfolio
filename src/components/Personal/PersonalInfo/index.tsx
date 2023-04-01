@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import { Button } from "~/components/base/buttons";
 import styles from "~/styles/modules/personal.module.css";
